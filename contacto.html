@@ -44,19 +44,20 @@
     <div id="container">
       <header>
         <!-- Banner -->
-        <picture class="header__banner">
-          <!-- smartphone -->
-          <source
-            srcset="img/smartphone/banner_contacto.webp 1x"
-            media="(min-width:320px) and (orientation:portrait)" />
+        <a href="index.html">
+          <picture class="header__banner">
+            <!-- smartphone -->
+            <source
+              srcset="img/smartphone/banner_contacto.webp 1x"
+              media="(min-width:320px) and (orientation:portrait)" />
 
-          <img
-            src=""
-            alt="arena de la playa mediterranea"
-            decoding="async"
-            loading="lazy" />
-        </picture>
-
+            <img
+              src=""
+              alt="arena de la playa mediterranea"
+              decoding="async"
+              loading="lazy" />
+          </picture>
+        </a>
         <nav>
           <!-- Botones -->
           <a href="servicio.html" class="header__servicio boton"> Servicio </a>
@@ -67,11 +68,23 @@
       <main>
         <form action="" method="post">
           <!-- nombre -->
-          <input name="nombre" type="text" required placeholder="Introduce tu nombre*" />
+          <input
+            name="nombre"
+            type="text"
+            required
+            placeholder="Introduce tu nombre*" />
           <!-- apellidos -->
-          <input name="apellidos"type="text" placeholder="Introduce tus apellidos" />
+          <input
+            name="apellidos"
+            type="text"
+            placeholder="Introduce tus apellidos" />
           <!-- comentario -->
-          <textarea name="comentario" required placeholder="Escribe tu comentario*" cols="30" rows="10" ></textarea>
+          <textarea
+            name="comentario"
+            required
+            placeholder="Escribe tu comentario*"
+            cols="30"
+            rows="10"></textarea>
 
           <!-- Botones del formulario -->
           <button type="submit">Enviar</button>
