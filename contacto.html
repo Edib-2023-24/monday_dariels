@@ -47,7 +47,7 @@
         <picture class="header__banner">
           <!-- smartphone -->
           <source
-            srcset="img/smartphone/banner_index.webp 1x"
+            srcset="img/smartphone/banner_contacto.webp 1x"
             media="(min-width:320px) and (orientation:portrait)" />
 
           <img
@@ -65,26 +65,26 @@
       </header>
 
       <main>
-        <figure class="img__central">
-          <picture>
-            <img src="img/smartphone/Imagen_Central_index.webp" alt="Playa con momtañas">
-          </picture>
-          <figcaption class="texto">
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Auctor aliquet egestas
-              eget ac tempor ultrices est sed. Rutrum habitasse dignissim amet
-              ornare vitae nulla. Arcu leo volutpat scelerisque faucibus. At
-              sagittis tincidunt interdum vel diam turpis nisl ut. Luctus enim
-              fermentum nec molestie. Lectus ultrices et morbi quam duis
-              ultrices ipsum enim in. Ullamcorper mi odio urna nunc enim gravida
-              ac magna. Eu amet mattis pulvinar arcu phasellus. Lorem fermentum
-              justo at auctor parturient neque ultrices. Sit vel eget et eget
-              lectus purus risus.
-            </p>
-          </figcaption>
-        </figure>
+        <form action="" method="post">
+          <!-- nombre -->
+          <input name="nombre" type="text" required placeholder="Introduce tu nombre*" />
+          <!-- apellidos -->
+          <input name="apellidos"type="text" placeholder="Introduce tus apellidos" />
+          <!-- comentario -->
+          <textarea name="comentario" required placeholder="Escribe tu comentario*" cols="30" rows="10" ></textarea>
+
+          <!-- Botones del formulario -->
+          <button type="submit">Enviar</button>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur. Egestas massa risus vitae
+            venenatis gravida porttitor. Libero a amet lobortis elementum sed
+            libero. Vel dolor massa.
+          </p>
+        </form>
       </main>
 
+      <!-- Pie de Pagina -->
       <footer>
         <section class="footer__redes">
           <a href="" class="footer__facebook icon" target="_blank">

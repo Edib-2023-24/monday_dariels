@@ -8,12 +8,114 @@
 
 /* Tipografía */
 @font-face {
-  font-family: "";
-  src: url("") format("woff2"), url("") format("woff");
+  font-family: "Roboto";
+  src: url("../font/roboto-regular.woff2") format("woff2"),
+    url("../font/roboto-regular.woff") format("woff");
 }
-
 /* ******************************** */
 
 /* Colores */
 
 /* ******************************** */
+
+:root {
+  --color-blanco: #ffffff;
+  --color-gris-claro: #f2f2f2;
+  --color-negro: #000000;
+  --color-rojo: #f23d3d;
+  --color-rojo-oscuro: #732929;
+  --color-turquesas: #4bbfb4;
+  --color-turquesas-oscuro: #3b8c84;
+}
+
+/* Genericos */
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+/* Header */
+header {
+  & img {
+    width: 100%;
+  }
+}
+
+nav {
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boton {
+  padding: 10px 20px;
+  color: var(--color-blanco);
+  background: var(--color-rojo-oscuro);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/********** */
+/* Footer */
+footer {
+  background: var(--color-negro);
+  height: 70px;
+  display: flex;
+  justify-content: center;
+
+  /* Footer Fijo */
+  /* position: fixed; */
+  /* bottom: 0; */
+  /* width: 100%; */
+}
+
+.footer__redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  padding: 20px;
+}
+
+/* *************** */
+/* Main del Index */
+
+.img__central {
+  .texto {
+    padding: 40px 20px;
+    color: var(--color_negro, #000);
+    font-size: 16px;
+  }
+}
+
+/* *************** */
+/* Formulario de Contacto */
+form {
+  padding: 20px;
+
+  & p {
+    font-size: 10px;
+  }
+
+  & input,
+  textarea {
+    padding: 10px;
+    margin: 10px 0px;
+    background: var(--color-gris-claro);
+    resize: none;
+    border: 0;
+  }
+
+  & button {
+    width: 100%;
+    background: var(--color-turquesas-oscuro);
+  }
+
+  ::placeholder {
+    color: var(--color-rojo);
+    opacity: 0.6;
+  }
+}
